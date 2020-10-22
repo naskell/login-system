@@ -1,0 +1,13 @@
+<h1>Hi <%= name %></h1>
+<body>
+  <div class="container">
+  <%- include('partials/header.ejs') %>
+    <div class="inner-container">
+    <%- include('partials/errorMessage.ejs') %>
+
+    </div>
+  </div>
+</body>
+<form action="/logout?_method=DELETE" method="POST">
+  <button type="submit">Log Out</button>
+</form>
